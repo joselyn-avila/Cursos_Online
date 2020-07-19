@@ -1,0 +1,16 @@
+package com.cursosonline.dao;
+
+import com.cursosonline.entidades.Estudiante;
+import java.util.List;
+
+/**
+ *
+ * @author Administrador
+ */
+public interface EstudianteDao {
+    void ingresar(Estudiante estudiante);
+    void actualizar(Estudiante estudiante);
+    void eliminar(int id);
+    
+    List<Estudiante> getEstudiantes();
+}
