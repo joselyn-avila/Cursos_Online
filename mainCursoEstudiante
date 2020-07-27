@@ -1,0 +1,18 @@
+package cursosonline.Test;
+import cursosonline.Dao.CursoDao;
+import cursosonline.Dao.EstudianteDAO;
+import cursosonline.Dao.EstudianteDaoImp;
+import cursosonline.Dao.cursoDaoImp;
+import cursosonline.Dao.cursoEstudianteDaoImp;
+import cursosonline.Dao.cursoestudianteDAO;
+import cursosonline.entidades.CursoEstudiante;
+public class Prueba {
+    public static void main(String[] args) {
+        EstudianteDAO estudiaDAO = new EstudianteDaoImp();
+        CursoDao curDAO = new cursoDaoImp();
+        cursoestudianteDAO curestuDAO = new cursoEstudianteDaoImp();
+        CursoEstudiante curestu = new CursoEstudiante(8, 2, 1);
+        curestuDAO.ingresar(curestu);
+        System.out.println(curestuDAO.getCurso_Estudi());
+        
+© 2020 GitHub, Inc.
